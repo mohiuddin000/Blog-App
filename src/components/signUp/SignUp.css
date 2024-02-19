@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.SignUpmain {
+    background-color: #ffffff;
+    width: 70%; /* Adjusted width for laptop screens */
+    max-width: 600px; /* Limit maximum width */
+    margin: 120px auto; /* Center the container vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px #999999;
+    padding: 40px; /* Adjusted padding */
+}
+
+.SignUpheading {
+    padding-top: 30px;
+    color: #111111;
+    font-weight: 900;
+    font-size: 25px; /* Adjusted font size for better readability */
+    margin-bottom: 50px; /* Add some space between heading and content */
+}
+
+.SignUpcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap between elements */
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Make sure content fills the container width */
+}
+
+.SignUpinput {
+    width: 300px; /* Make inputs fill the container width */
+    border: 1px solid #999999;
+    border-radius: 10px;
+    padding: 12px; /* Adjusted padding */
+    color: #444444;
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.SignUpbutton {
+    font-size: 1rem; /* Adjusted font size */
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 12px 20px; /* Adjusted padding */
+    text-align: center;
+    border: none;
+    background-color: #0056fb;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.SignUpbutton:hover {
+    background-color: #4f85eb;
+}
+
+.SignUpsignup {
+    color: #444444;
+    font-weight: 600;
+    margin-top: 20px; /* Add some space above the signup link */
+}
+
+.SignUplink {
+    text-decoration: none;
+    color: #0056fb;
+}

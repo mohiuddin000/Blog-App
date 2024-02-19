@@ -1,0 +1,24 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.initials {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border-radius: 50%; /* Make it a circle */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.text {
+    font-size: 24px;
+}

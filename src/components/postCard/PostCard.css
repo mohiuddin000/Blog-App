@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.PostCardmain {
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 10px 10px 30px rgba(211, 206, 206, 0.5); /* Adjust shadow */
+    width: 200px; /* Adjust width for better spacing */
+    border-radius: 15px; /* Adjust border radius */
+    border: 1px solid #999999;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Add transition for smoother effect */
+}
+
+.PostCardmain:hover {
+    box-shadow: 5px 5px 20px rgba(211, 206, 206, 0.8); /* Change shadow on hover */
+}
+
+.PostCardimg img {
+    height: 120px;
+    width: 100%; /* Ensure image fills its container */
+    border-top-left-radius: 15px; /* Adjust border radius */
+    border-top-right-radius: 15px; /* Adjust border radius */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.PostCardtitle {
+    color: #111111;
+    font-weight: 800;
+    padding: 10px; /* Adjust padding */
+    font-size: 18px; /* Adjust font size */
+    text-align: center; /* Center align the text */
+}

@@ -1,0 +1,11 @@
+.select {
+    margin-left: 30px;
+    border: 2px solid #999999;
+    border-radius: 5px;
+    color: #444444;
+    filter: drop-shadow(1px 1px 2px #cfcdcd);
+    font-weight: 600;
+}
+.select option {
+    font-weight: 600;
+}

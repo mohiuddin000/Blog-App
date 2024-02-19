@@ -1,0 +1,11 @@
+.logout {
+    display: inline-block;
+    padding: 8px 24px;
+    transition-duration: 200ms;
+    border-radius: 100px;
+    background-color: #0056fb;
+}
+
+.logout:hover {
+    background-color: #6b97eb;
+}

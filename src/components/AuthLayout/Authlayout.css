@@ -1,0 +1,29 @@
+.protected {
+    position: relative;
+}
+
+.loading .children {
+    display: none;
+}
+
+.loaded .children {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.loading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

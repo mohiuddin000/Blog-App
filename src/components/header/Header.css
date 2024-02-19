@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.headerheader {
+    padding: 20px;
+    padding-top: 20px;
+}
+
+.headerlogo {
+    text-decoration: none;
+}
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+}
+.headerelements {
+    display: flex;
+    gap: 20px;
+}
+
+.headerelement {
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+}
+
+.headerelement button {
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.headerelement button:hover {
+    background-color: rgb(230, 225, 225);
+}

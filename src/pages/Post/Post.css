@@ -1,0 +1,76 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Set font family */
+body {
+    font-family: "Arial", sans-serif; /* Use Arial as the primary font family */
+}
+
+/* Center align the heading */
+.Postheading {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    color: #111111;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the main container */
+.Postmain {
+    border: 1px solid #999999;
+    margin: 100px 150px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #999999;
+}
+
+/* Styling for the image */
+.Postimg {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    overflow: hidden; /* Hide overflow */
+}
+
+.Postimg img {
+    border-radius: 20px;
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    max-height: 70vh;
+}
+
+/* Styling for the paragraph text */
+.Posttitle p {
+    font-size: 18px; /* Increase font size for better readability */
+    line-height: 1.6; /* Improve line spacing for better readability */
+}
+
+/* Styling for the post actions */
+.Postpost-actions {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Styling for delete and update buttons */
+.Postdelete-btn,
+.Postupdate-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Postdelete-btn:hover,
+.Postupdate-btn:hover {
+    background-color: #cc0000;
+}
