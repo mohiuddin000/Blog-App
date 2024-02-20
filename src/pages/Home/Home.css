@@ -63,44 +63,35 @@
 
 /* General Styles */
 
-.Homemain1 {
-    background-color: #ffffff; /* White background */
-    color: #444444; /* Default text color */
-    font-family: Arial, sans-serif; /* Default font */
-    padding: 20px; /* Add padding for spacing */
-    width: 100%; /* Adjust width as needed */
+* {
+    margin: 0;
+    padding: 0;
 }
-
-.Homecontainer1 {
-    margin: auto; /* Center the container */
-    text-align: center; /* Center the text */
-}
-
-.Homeheading {
-    margin-bottom: 20px; /* Add space below heading */
-}
-
-h1 {
-    color: #111111; /* Headings color */
-}
-
 .Homecontainer {
-    background-color: #ffffff; /* White background */
-    color: #444444; /* Default text color */
-    font-family: Arial, sans-serif; /* Default font */
-    padding: 20px; /* Add padding for spacing */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 80px;
+    margin-top: 50px;
 }
-
 .Homemain {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap to next line */
-    justify-content: center; /* Center items horizontally */
+    padding: 15px 15px;
+    margin: 20px;
+    box-shadow: 10px 10px 30px rgb(211, 206, 206);
+    width: 250px;
+    border-radius: 25px;
+    border: 1px solid #999999;
+    cursor: pointer;
 }
 
-.Homep {
-    margin: 10px; /* Add space between post cards */
+.Homeimg img {
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
 }
 
-/* Component-Specific Styles */
-
-/* Add specific styles for your Home component here */
+.Hometitle {
+    color: #111111;
+    font-weight: 800;
+    padding-left: 5px;
+    font-size: 20px;
+}

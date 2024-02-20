@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
-.PostCardmain {
+/* .PostCardmain {
     padding: 15px;
     margin: 20px;
-    box-shadow: 10px 10px 30px rgba(211, 206, 206, 0.5); /* Adjust shadow */
-    width: 200px; /* Adjust width for better spacing */
-    border-radius: 15px; /* Adjust border radius */
+    box-shadow: 10px 10px 30px rgba(211, 206, 206, 0.5); 
+    width: 200px;
+    border-radius: 15px; 
     border: 1px solid #999999;
     cursor: pointer;
-    transition: box-shadow 0.3s ease; /* Add transition for smoother effect */
+    transition: box-shadow 0.3s ease; 
 }
 
 .PostCardmain:hover {
-    box-shadow: 5px 5px 20px rgba(211, 206, 206, 0.8); /* Change shadow on hover */
-}
+    box-shadow: 5px 5px 20px rgba(211, 206, 206, 0.8); 
+} */
 
 .PostCardimg img {
     height: 120px;
