@@ -124,11 +124,18 @@ function Post() {
                 {isAuthor && (
                     <div className="Postpost-actions">
                         <Link to={`/edit-post/${post.$id}`}>
-                            <Button className="Postupdate-btn">
+                            <Button
+                                className="Postupdate-btn"
+                                backgroundColor="red"
+                            >
                                 Edit Post
                             </Button>
                         </Link>
-                        <Button className="Postdelete-btn" onClick={deletePost}>
+                        <Button
+                            className="Postdelete-btn"
+                            backgroundColor="red"
+                            onClick={deletePost}
+                        >
                             Delete Post
                         </Button>
                     </div>

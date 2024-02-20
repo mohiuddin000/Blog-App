@@ -55,6 +55,7 @@ body {
 .Postpost-actions {
     display: flex;
     justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px;
 }
 
 /* Styling for delete and update buttons */

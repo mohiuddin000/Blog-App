@@ -1,27 +1,32 @@
-/* .main1 {
+.Homemain1 {
     width: 100%;
     padding: 32px 0;
     margin-top: 16px;
     text-align: center;
 }
 
-.container1 {
+.Homecontainer1 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.heading {
+.Homeheading {
     padding: 8px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.heading h1 {
+.Homeheading h1 {
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -59,27 +64,25 @@
     font-weight: 800;
     padding-left: 5px;
     font-size: 20px;
-} */
-
-/* General Styles */
+}  */
 
 * {
     margin: 0;
     padding: 0;
 }
-.Homecontainer {
+/* .Homecontainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-left: 80px;
     margin-top: 50px;
-}
+} */
 .Homemain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 80px;
+    margin-top: 30px;
     padding: 15px 15px;
     margin: 20px;
-    box-shadow: 10px 10px 30px rgb(211, 206, 206);
-    width: 250px;
-    border-radius: 25px;
-    border: 1px solid #999999;
     cursor: pointer;
 }
 
