@@ -262,3 +262,25 @@ body {
 .desc::-webkit-scrollbar-thumb:hover {
     background-color: #999;
 }
+
+#uploadInput {
+    display: none; /* Hide the default file input */
+}
+
+#uploadButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#uploadButton:hover {
+    background-color: #45a049;
+}
+
+#uploadedImage {
+    max-width: 100%;
+    margin-top: 20px;
+}

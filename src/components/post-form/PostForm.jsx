@@ -87,21 +87,28 @@ export default function PostForm({ post }) {
                         <Input
                             type="file"
                             id="fileInput"
-                            style={{ display: "none" }}
+                            style={{}}
                             {...register("image", { required: !post })}
                         />
-                        <label for="fileInput" className="uploadButton">
+                        <label htmlFor="fileInput" className="uploadButton">
                             Upload Image
                         </label>
+
                         {post && (
                             <div className="preview">
-                                <img src="" alt="" />
+                                <img
+                                    src={appwriteService.getFilePriview(
+                                        post.featuredImage
+                                    )}
+                                    alt={post.title}
+                                    className="rounded-lg"
+                                />
                             </div>
                         )}
                     </div>
                     <div className="main1">
                         <div className="name">
-                            <label for="title" className="title_label">
+                            <label htmlFor="title" className="title_label">
                                 Title:
                             </label>
                             <Input
@@ -123,7 +130,7 @@ export default function PostForm({ post }) {
                             />
                         </div>
                         <div>
-                            <label for="slug" className="title_label">
+                            <label htmlFor="slug" className="title_label">
                                 Slug:
                             </label>
                             <Input
