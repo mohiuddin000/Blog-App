@@ -5,12 +5,14 @@ function Button({
     type = "button",
     backgroundColor = "",
     color = "",
+    ...props
 }) {
     return (
         <button
             className="button"
             type={type}
             style={{ backgroundColor, color }}
+            {...props}
         >
             {children}
         </button>

@@ -1,117 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-}
-.container {
-    border: 1px solid #999999;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px #999999;
-    margin: 70px 150px;
-    padding: 20px;
-}
-.content {
-    display: flex;
-}
-.heading {
-    width: fit-content;
-    color: #111111;
-    margin-left: 100px;
-    margin-top: 80px;
-
-    padding: 10px;
-}
-
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50vw;
-    height: 100vh;
-}
-.preview {
-    width: 300px;
-    height: 300px;
-    border: 1px solid #999999;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    filter: drop-shadow(1px 1px 2px #cfcdcd);
-}
-.img button {
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid #cfcdcd;
-    background-color: #0056fb;
-    color: white;
-    font-weight: 600;
-    filter: drop-shadow(1px 1px 2px #cfcdcd);
-}
-
-.main {
-    position: relative;
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-}
-
-.title {
-    width: 50%;
-    border: 2px solid #999999;
-    border-radius: 10px;
-    padding: 10px;
-    filter: drop-shadow(1px 1px 2px #cfcdcd);
-    font-size: 12px;
-    font-weight: 500;
-}
-.title_label {
-    font-weight: 600;
-    font-size: 20px;
-    color: #444444;
-    filter: drop-shadow(1px 1px 2px #cfcdcd);
-}
-.select {
-    margin-left: 30px;
-    border: 2px solid #999999;
-    border-radius: 5px;
-    color: #444444;
-    filter: drop-shadow(1px 1px 2px #cfcdcd);
-    font-weight: 600;
-}
-.select option {
-    font-weight: 600;
-}
-
-.desc {
-    width: 88%;
-    height: 40vh;
-    border: 2px solid #999999;
-    border-radius: 10px;
-    padding: 20px;
-    filter: drop-shadow(1px 1px 2px #cfcdcd);
-}
-
-.postB {
-    position: absolute;
-    width: 20%;
-
-    margin-top: 50px;
-    right: 0;
-    bottom: 10px;
-    padding: 5px;
-    background-color: #0056fb;
-    text-decoration: none;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 16px;
-    filter: drop-shadow(1px 1px 2px #cfcdcd);
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -143,14 +29,30 @@ body {
 
 .content1 {
     display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
+/* .preview {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 2px #cfcdcd);
+    overflow: hidden;
+} */
+
+/* .img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+} */
+
 .img {
-    flex: 1; /* Take remaining space */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 300px;
+    height: 100%;
 }
 
 /* Add CSS for the preview box */
@@ -161,8 +63,7 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
     filter: drop-shadow(1px 1px 2px #cfcdcd);
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
 }
 
 /* Style for the upload button */

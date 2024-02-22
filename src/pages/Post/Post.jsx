@@ -75,7 +75,7 @@ import { useSelector } from "react-redux";
 import parse from "html-react-parser";
 import "./Post.css";
 
-function Post() {
+export default function Post() {
     const [post, setPost] = useState(null);
     const { slug } = useParams();
     const navigate = useNavigate();
@@ -88,17 +88,21 @@ function Post() {
         if (slug) {
             appwriteService.getPost(slug).then((post) => {
                 if (post) {
+                    console.log("post find");
                     setPost(post);
                 } else {
+                    console.log("not post find");
                     navigate("/");
                 }
             });
         } else {
+            console.log("no slug");
             navigate("/");
         }
     }, [slug, navigate]);
 
     const deletePost = () => {
+        console.log("in delete post");
         appwriteService.deletePost(post.$id).then((status) => {
             if (status) {
                 appwriteService.deleteFile(post.featuredImage);
@@ -144,5 +148,3 @@ function Post() {
         </div>
     ) : null;
 }
-
-export default Post;

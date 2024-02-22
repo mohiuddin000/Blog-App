@@ -83,7 +83,18 @@ export default function PostForm({ post }) {
                 <h1 className="heading">Create a new post</h1>
                 <div className="content1">
                     <div className="img">
-                        <div className="preview"></div>
+                        {/* <div className="preview"></div> */}
+                        {post && (
+                            <div className="preview">
+                                <img
+                                    src={appwriteService.getFilePriview(
+                                        post.featuredImage
+                                    )}
+                                    alt={post.title}
+                                    className="img"
+                                />
+                            </div>
+                        )}
                         <Input
                             type="file"
                             id="fileInput"
@@ -94,7 +105,7 @@ export default function PostForm({ post }) {
                             Upload Image
                         </label>
 
-                        {post && (
+                        {/* {post && (
                             <div className="preview">
                                 <img
                                     src={appwriteService.getFilePriview(
@@ -104,7 +115,7 @@ export default function PostForm({ post }) {
                                     className="rounded-lg"
                                 />
                             </div>
-                        )}
+                        )} */}
                     </div>
                     <div className="main1">
                         <div className="name">
